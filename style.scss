@@ -32,7 +32,7 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    background-color: #E5E5E5;
+    background-color: #fff;
   }
   
   input, button, textarea {
@@ -80,7 +80,8 @@
 body{
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+
 }
 ._lock{
     overflow: hidden;
@@ -395,10 +396,22 @@ body{
 .main__second {
     margin-top: 265px;
     padding: 80px 0px;
+    display: flex;
+    align-items: center;
 }
 .second__text {
+    flex: 1 0 502px;
+    padding-right: 34px;
+    padding-bottom: 88px;
 }
-.text__item {
+
+.text__item{
+     padding: 20px 0px;
+     border-bottom: 1px solid #E7E7E7;
+         
+}
+.first{
+    padding-top:0px;
 }
 .item__title {
     font-weight: 600;
@@ -422,4 +435,33 @@ body{
 .subtitle__right {
 }
 .second__image {
+    position: relative;
+    display: flex;
+    column-gap: 22px;
+    background-image: url(../img/square.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.image__square {
+    position: absolute;
+    top: 53px;
+    left: 97px;
+    z-index: -1;
+    object-fit: contain;
+    img{
+        width: 100%;
+    }
+
+}
+.image__one {
+    margin-top: 152px;
+    img{
+        width: 100%;
+    }
+}
+.image__two {
+    img{
+        width: 100%;
+    }
 }

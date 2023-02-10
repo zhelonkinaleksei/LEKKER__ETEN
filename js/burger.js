@@ -1,4 +1,4 @@
-
+'use strict'
 const menuIcon = document.querySelector(".menu__icon");
 if (menuIcon) {
    const headMenu = document.querySelector(".header__nav");

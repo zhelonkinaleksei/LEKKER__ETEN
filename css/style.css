@@ -33,7 +33,7 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: #E5E5E5;
+  background-color: #fff;
 }
 
 input, button, textarea {
@@ -82,7 +82,7 @@ a {
 body {
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 ._lock {
@@ -468,6 +468,29 @@ body {
 .main__second {
   margin-top: 265px;
   padding: 80px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 502px;
+          flex: 1 0 502px;
+  padding-right: 34px;
+  padding-bottom: 88px;
+}
+
+.text__item {
+  padding: 20px 0px;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.first {
+  padding-top: 0px;
 }
 
 .item__title {
@@ -494,4 +517,41 @@ body {
 
 .subtitle__center {
   height: 5px;
+}
+
+.second__image {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 22px;
+     -moz-column-gap: 22px;
+          column-gap: 22px;
+  background-image: url(../img/square.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.image__square {
+  position: absolute;
+  top: 53px;
+  left: 97px;
+  z-index: -1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.image__square img {
+  width: 100%;
+}
+
+.image__one {
+  margin-top: 152px;
+}
+.image__one img {
+  width: 100%;
+}
+
+.image__two img {
+  width: 100%;
 }
