@@ -34,7 +34,7 @@
     else{
         $message = 'Данные отправлены';
 
-        $response = ['message' => $massage];
+        $response = ['message' => $message];
         echo json-encode($response);
     }
 
