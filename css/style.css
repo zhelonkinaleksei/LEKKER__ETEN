@@ -743,6 +743,13 @@ textarea {
   resize: none;
 }
 
+.form__body {
+  position: relative;
+}
+.form__body .form__body::after {
+  content: "";
+}
+
 .form__title {
   font-weight: 700;
   font-size: 30px;
@@ -778,6 +785,10 @@ textarea {
 .form__input {
   border: 1px solid #CCCCCC;
   padding: 10px 5px;
+}
+.form__input._error {
+  -webkit-box-shadow: 0 0 15px red;
+          box-shadow: 0 0 15px red;
 }
 
 .form__button {

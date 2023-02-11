@@ -429,13 +429,11 @@ body{
     line-height: 178%;
     flex-wrap: wrap;
 }
-.subtitle__left {
-}
+
 .subtitle__center {
    height: 5px;
 }
-.subtitle__right {
-}
+
 .second__image {
     position: relative;
     display: flex;
@@ -639,9 +637,6 @@ textarea{
   resize: none;
 }
 
-.form__body {
-
-}
 .form__title {
   font-weight: 700;
   font-size: 30px;
@@ -671,8 +666,12 @@ textarea{
 .form__input {
   border: 1px solid #CCCCCC;
   padding: 10px 5px;
+    &._error{
+    box-shadow: 0 0 15px red;
+    }
  
 }
+
 .form__button {
   margin-top: 10px;
   font-size: 20px;
