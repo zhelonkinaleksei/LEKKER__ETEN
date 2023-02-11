@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,700" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>Lekker__Eten</title>
 </head>
 <body>
@@ -101,6 +103,44 @@
   
             </div>
         </div>
+        <div class="swiper swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                   <div class="slide__quotation">
+                    <img src="img\quotation.svg" alt="quotation">
+                   </div>
+                   <div class="slide__title">Goede service, lekker eten, toffe ambiance</div>
+                   <div class="slide__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</div>
+                   <div class="slide__name">ALAIN HEYNDRICKX</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__quotation">
+                     <img src="img\quotation.svg" alt="quotation">
+                    </div>
+                    <div class="slide__title">Goede service, lekker eten, toffe ambiance</div>
+                    <div class="slide__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</div>
+                    <div class="slide__name">ALAIN HEYNDRICKX</div>
+                </div>   
+                <div class="swiper-slide">
+                    <div class="slide__quotation">
+                     <img src="img\quotation.svg" alt="quotation">
+                    </div>
+                    <div class="slide__title">Goede service, lekker eten, toffe ambiance</div>
+                    <div class="slide__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</div>
+                    <div class="slide__name">ALAIN HEYNDRICKX</div>
+                </div>   
+                <div class="swiper-slide">
+                    <div class="slide__quotation">
+                     <img src="img\quotation.svg" alt="quotation">
+                    </div>
+                    <div class="slide__title">Goede service, lekker eten, toffe ambiance</div>
+                    <div class="slide__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</div>
+                    <div class="slide__name">ALAIN HEYNDRICKX</div>
+                </div>    
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
       </main>
       <footer class="footer">
         <a href="#" class="footer__logo"> <img src="img\logoblack.svg" alt="logoblack"> </a>
@@ -111,7 +151,34 @@
             <a href="#"> <img src="img\ytblack.svg" alt="ytblack"> </a>
         </div>
       </footer>
+      <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__form">
+                <div class="form__cancel">
+                    <img src="img/cancel.png" alt="cancel">
+                </div>
+                <form action="#" id="form" class="form__body">
+                    <div class="form__title">Reserve a Table</div>
+                    <div class="form__item">
+                        <label for="formName" class="form__label" >Name</label>
+                        <input id="formName" type="text" name="Name" class="form__input" placeholder="Input your name" >
+                    </div>
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label" >Email</label>
+                        <input id="formEmail" type="text" name="Email" class="form__input" placeholder="Input your Email" >
+                    </div>
+                    <div class="form__item">
+                        <label for="formMessage" class="form__label" >Speciale Request</label>
+                        <textarea name="Message" id="formMessage" class="form__input" placeholder="Input your special request"></textarea>
+                    </div>
+                    <button type="submit" class="form__button" >Reserve</button>
+                </form>
+            </div>
+        </div>
+      </div>
    </div> 
     <script src="js/burger.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 </html>
