@@ -1,9 +1,9 @@
 <?php
-    use PHPMailer-6.7.1\PHPMailer\PHPMailer;
-    use PHPMailer-6.7.1\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
 
-    require 'phpmailer-6.7.1\src\Exception.php';
-    require 'phpmailer-6.7.1\src\PHPMailer.php';
+    require 'phpmailer\src\Exception.php';
+    require 'phpmailer\src\PHPMailer.php';
 
     $mail = new PHPMailer(trur);
     $mail->Charset - ' UTF-8';
