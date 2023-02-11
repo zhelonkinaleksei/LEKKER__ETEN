@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         if(error === 0) {
             let response = await fetch('sendmail.php', {
-                method: 'POST',
+                method: 'GET',
                 body: formData
             });
             if(response.ok){
@@ -21,17 +21,15 @@ document.addEventListener("DOMContentLoaded", function(){
                 alert(result.message);
                 form.reset();
             } else{
-                alert('Oшибка')
+                alert('Oшибка');
             }
-
         } else{
-            alert('Заполните обязательные поля');
-        }
+            alert('Заполните все поля');        }    
     }
 
     function formValidate(form){
         let error = 0;
-        let formReq = document.querySelectorAll('._req');
+        let formReq = document.querySelectorAll('_req');
 
         for ( let index = 0; index < formReq.length; index++){
             const input = formReq[index];
@@ -59,8 +57,60 @@ document.addEventListener("DOMContentLoaded", function(){
         input.parentElement.classList.remove('_error');
         input.classList.remove('_error');
     }
-
     function emailTest(input){
-        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
-    };
-});
+        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+    }
+});        
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+        
+       
+       
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d
+
+        
+
+        
+
+    
+
+           
+           
+
+
+
