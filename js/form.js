@@ -23,8 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
             } else{
                 alert('Oшибка');
             }
-        } else{
-            alert('Заполните все поля');        }    
+        } 
     }
 
     function formValidate(form){
