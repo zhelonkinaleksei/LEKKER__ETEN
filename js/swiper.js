@@ -1,5 +1,3 @@
-
-
 new Swiper(".swiper",{
     navigation:{
         nextEl: ".swiper-button-next",

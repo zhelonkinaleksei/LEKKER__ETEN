@@ -4,31 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,700" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Flex:regular" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>Lekker__Eten</title>
 </head>
 <body>
    <div class="wrapper">
-      <div class="header">
+      <div class="header" id="home" >
         <div class="header__logo">
             <img src="img\logo.svg" alt="logo">
         </div>
         <nav class="header__nav">
             <ul>
                 <li>
-                    <a href="#">À la carte</a>
+                    <a href="#home">Главная</a>
                 </li>
                 <li>
-                    <a href="#">Wijnkaart</a>
+                    <a href="#slide">Слайдер</a>
                 </li>
                 <li>
-                    <a href="#">Lunchmenu</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="#calc">Калькулятор</a>
                 </li>
             </ul>
         </nav>
@@ -42,11 +39,11 @@
             <div class="num__character">+32 9 282 57 25</div>
         </a>
       </div>
-      <main class="main">
-        <h2 class="main__subtitle">OPEN EVERYDAY 6AM - 9PM</h2>
-        <h1 class="main__title">A bad day with lunch is better than a good day without it.</h1>
+      <main class="main"  >
+        <h2 class="main__subtitle">ОТКРЫТЫ КАЖДЫЙ ДЕНЬ 6AM - 9PM</h2>
+        <h1 class="main__title">Плохой день с обедом лучше, чем хороший день без него.</h1>
         <div class="reserve__line">
-            <button class="reserve__button">Reserve a table</button>
+            <a href="calc" class="reserve__button">Заказать банкет</a>
             <div class="line__social">
                 <a href="#"> <img src="img\fb.svg" alt="fb"> </a>
                 <a href="#"> <img src="img\lg.svg" alt="lg"> </a>
@@ -54,89 +51,17 @@
                 <a href="#"> <img src="img\yt.svg" alt="yt"> </a>
             </div>
         </div>
-        <div class="main__second">
-            <div class="second__text">
-                <div class="text__item first">
-                    <div class="item__title">Woensdag 12/01</div>
-                    <div class="item__subtitle">
-                        <div class="subtitle__left">Salade met Serrano</div>
-                        <div class="subtitle__center"><img src="img\point.svg" alt="point"></div>
-                        <div class="subtitle__right">Steak Tartaar</div>
-                    </div>
-                </div>
-                <div class="text__item">
-                    <div class="item__title">Donderdag 13/01</div>
-                    <div class="item__subtitle">
-                        <div class="subtitle__left">Toast Roquefort</div>
-                        <div class="subtitle__center"><img src="img\point.svg" alt="point"></div>
-                        <div class="subtitle__right">Penne met Kip en Prei</div>
-                    </div>
-                </div>
-                <div class="text__item">
-                    <div class="item__title">Vrijdag 14/01</div>
-                    <div class="item__subtitle">
-                        <div class="subtitle__left">Verrassing van de Chef</div>
-                        <div class="subtitle__center"><img src="img\point.svg" alt="point"></div>
-                        <div class="subtitle__right">Penne met Kip en Prei</div>
-                    </div>
-                </div>
-                <div class="text__item">
-                    <div class="item__title">Vrijdag 15/01</div>
-                    <div class="item__subtitle">
-                        <div class="subtitle__left">Verrassing van de Chef</div>
-                        <div class="subtitle__center"><img src="img\point.svg" alt="point"></div>
-                        <div class="subtitle__right">Penne met Kip en Prei</div>
-                    </div>
-                </div>
-                <div class="text__item">
-                    <div class="item__title">Vrijdag 16/01</div>
-                    <div class="item__subtitle">
-                        <div class="subtitle__left">Verrassing van de Chef</div>
-                        <div class="subtitle__center"><img src="img\point.svg" alt="point"></div>
-                        <div class="subtitle__right">Penne met Kip en Prei</div>
-                    </div>
-                </div>
-            </div>
-            <div class="second__image">
-                <div class="image__one"> <img src="img\imageone.jpg" alt="imageone"> </div>
-                <div class="image__two"> <img src="img\imagetwo.jpg" alt="imagetwo"> </div>
-  
-            </div>
-        </div>
-        <div class="swiper swiper-container">
+        <div class="swiper swiper-container" id="slide">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                   <div class="slide__quotation">
-                    <img src="img\quotation.svg" alt="quotation">
-                   </div>
-                   <div class="slide__title">Goede service, lekker eten, toffe ambiance</div>
-                   <div class="slide__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</div>
-                   <div class="slide__name">ALAIN HEYNDRICKX</div>
-                </div>
+                    <img src="img\sliderimg1.jpg" alt="">
+                </div>  
                 <div class="swiper-slide">
-                    <div class="slide__quotation">
-                     <img src="img\quotation.svg" alt="quotation">
-                    </div>
-                    <div class="slide__title">Goede service, lekker eten, toffe ambiance</div>
-                    <div class="slide__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</div>
-                    <div class="slide__name">ALAIN HEYNDRICKX</div>
-                </div>   
+                    <img src="img\sliderimg2.jpg" alt="">
+                </div>  
                 <div class="swiper-slide">
-                    <div class="slide__quotation">
-                     <img src="img\quotation.svg" alt="quotation">
-                    </div>
-                    <div class="slide__title">Goede service, lekker eten, toffe ambiance</div>
-                    <div class="slide__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</div>
-                    <div class="slide__name">ALAIN HEYNDRICKX</div>
-                </div>   
-                <div class="swiper-slide">
-                    <div class="slide__quotation">
-                     <img src="img\quotation.svg" alt="quotation">
-                    </div>
-                    <div class="slide__title">Goede service, lekker eten, toffe ambiance</div>
-                    <div class="slide__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</div>
-                    <div class="slide__name">ALAIN HEYNDRICKX</div>
-                </div>    
+                    <img src="img\sliderimg3.jpg" alt="">
+                </div>     
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -151,35 +76,7 @@
             <a href="#"> <img src="img\ytblack.svg" alt="ytblack"> </a>
         </div>
       </footer>
-      <div id="popup" class="popup">
-        <div class="popup__body">
-            <div class="popup__form">
-                <div class="form__cancel">
-                    <img src="img/cancel.png" alt="cancel">
-                </div>
-                <form action="#"  id="form" class="form__body">
-                    <div class="form__title">Reserve a Table</div>
-                    <div class="form__item">
-                        <label for="formName" class="form__label" >Name</label>
-                        <input id="formName" type="text" name="Name" class="form__input " placeholder="Input your name" >
-                    </div>
-                    <div class="form__item">
-                        <label for="formEmail" class="form__label" >Email</label>
-                        <input id="formEmail" type="text" name="Email" class="form__input _req _email" placeholder="Input your Email" >
-                    </div>
-                    <div class="form__item">
-                        <label for="formMessage" class="form__label" >Speciale Request</label>
-                        <textarea name="Message" id="formMessage" class="form__input" placeholder="Input your special request"></textarea>
-                    </div>
-                    <button type="submit" class="form__button" >Reserve</button>
-                </form>
-            </div>
-        </div>
-      </div>
    </div> 
-    <script src="js/burger.js"></script>
     <script src="js/swiper.js"></script>
-    <script src="js/popup.js"></script>
-    <script src="js/form.js"></script>
 </body>
 </html>
