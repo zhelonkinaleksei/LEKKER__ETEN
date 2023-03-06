@@ -79,7 +79,7 @@
             <div class="calculation__item">
                     <div class="calculation__item-column">
                         <label for="countquest">Количество гостей:*</label>
-                        <input  id="countquest" class="calculation__input" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" type="text"  maxlength="3"  name="countquest" value="">
+                        <input   id="countquest" class="calculation__input" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" type="text"  maxlength="3"  name="countquest" value="">
                     </div>
                     <div class="calculation__item-column">
                         <label for="countadult">Количество взрослых:</label>
@@ -101,15 +101,15 @@
             <div class="calculation__item calculation__item-result">
                 <div class="calculation__item-column">
                     <label for="countmiddlecost">Средняя стоимость на человека:</label>
-                    <input id="countmiddlecost" class="calculation__input" type="number" readonly name="countmiddlecost" value="">
+                    <div id="countmiddlecost" class="calculation__input" type="number" readonly name="countmiddlecost" value="">   </div>
                 </div>
                 <div class="calculation__item-column">
                     <label for="countsum">Общая сумма:</label>
-                    <div322 id="countsum" class="calculation__input"  ></div322>
+                    <div id="countsum" class="calculation__input"  ></div>
                 </div>
             </div>
             <div class="info__item">*Не более 200 человек</div>
-            <div class="info__item">**Не более 8 часов</div>
+            <div class="info__item">**Не более 9 часов</div>  
         </div>
       </main>
       <footer class="footer">
