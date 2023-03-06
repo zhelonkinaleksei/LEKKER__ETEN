@@ -78,22 +78,22 @@
             </div>
             <div class="calculation__item">
                     <div class="calculation__item-column">
-                        <label for="countquest">Количество гостей:</label>
-                        <input id="countquest" class="calculation__input" type="number" min="0" max="200" name="countquest" value="">
+                        <label for="countquest">Количество гостей:*</label>
+                        <input  id="countquest" class="calculation__input" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" type="text"  maxlength="3"  name="countquest" value="">
                     </div>
                     <div class="calculation__item-column">
                         <label for="countadult">Количество взрослых:</label>
-                        <input id="countadult" class="calculation__input" min="0" max="100" type="number" name="countadult" value="">
+                        <input  id="countadult" class="calculation__input"  maxlength="3" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" type="text" name="countadult" value="">
                     </div>
             </div> 
             <div class="calculation__item">
                 <div class="calculation__item-column">
                     <label for="countchild">Количество детей:</label>
-                    <input id="countchild" class="calculation__input" type="number" min="0" max="100" name="countchild" value="">
+                    <input id="countchild" class="calculation__input" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" type="text" maxlength="3" name="countchild" value="">
                 </div>
                 <div class="calculation__item-column">
-                    <label for="counthour">Количество часов:</label>
-                    <input id="counthour" min="0" class="calculation__input" max="8" type="number" name="counthour" value="">
+                    <label for="counthour">Количество часов:**</label>
+                    <input  id="counthour" maxlength="1" class="calculation__input"  onkeyup="this.value = this.value.replace(/[^\d]/g,'');" type="text"name="counthour" value="">
                 </div>
             </div> 
           
@@ -105,9 +105,11 @@
                 </div>
                 <div class="calculation__item-column">
                     <label for="countsum">Общая сумма:</label>
-                    <div id="countsum" class="calculation__input" ></div>
+                    <div322 id="countsum" class="calculation__input"  ></div322>
                 </div>
             </div>
+            <div class="info__item">*Не более 200 человек</div>
+            <div class="info__item">**Не более 8 часов</div>
         </div>
       </main>
       <footer class="footer">
